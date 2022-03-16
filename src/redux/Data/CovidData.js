@@ -1,4 +1,4 @@
-const FETCHDATA = 'COVID-19-DATA/ITEMS/FETCH';
+const FETCHDATA = 'COVID-19-DATA/DATA/FETCH';
 export const date = new Date().toISOString().split('T')[0];
 export const newDate = date.toString();
 const url = `https://api.covid19tracking.narrativa.com/api/${date}`;
