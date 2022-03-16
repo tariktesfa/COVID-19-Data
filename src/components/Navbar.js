@@ -4,15 +4,19 @@ import './Navbar.css';
 
 const Navbar = () => (
   <div className="navbar">
-    <IoIosArrowBack />
-    <h2 className="date">3/16/2022</h2>
-    <p className="header-text">Countries&apos;s COVID-19 Data</p>
-    <span className="icons-mic">
-      <BiMicrophone />
-    </span>
-    <span className="setting">
-      <BiCog />
-    </span>
+    <div className="nav-items">
+      <IoIosArrowBack className="arrow" />
+      <h3 className="date">2022</h3>
+      <p className="header-text">Countries&apos;s COVID-19 Data</p>
+    </div>
+    <div className="icons">
+      <span className="icons-mic">
+        <BiMicrophone />
+      </span>
+      <span className="setting">
+        <BiCog />
+      </span>
+    </div>
   </div>
 );
 
