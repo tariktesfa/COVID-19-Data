@@ -14,6 +14,7 @@ This is a React module capstone project. It is built with react and redux by usi
 - React
 - Redux
 - Jest
+- Webpack
 
 ## Getting Started
 
