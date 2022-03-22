@@ -14,7 +14,6 @@ This is a React module capstone project. It is built with react and redux by usi
 - React
 - Redux
 - Jest
-- Webpack
 
 ## Getting Started
 
@@ -40,6 +39,3 @@ To get a local copy up and running follow these simple example steps.
 ## Show your support
 
 Give a ⭐ if you like this project!
-
-## :memo: License
-This project is [MIT](./MIT.md) licensed.
