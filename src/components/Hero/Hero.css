@@ -1,0 +1,20 @@
+.hero-wrapper {
+  height: 40vh;
+  background: url(../../image/covid.jpg);
+  background-size: cover;
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 203, 203, 0),
+      #fd5193
+    );
+  padding: 2rem 0.4rem;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}

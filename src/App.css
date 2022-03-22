@@ -1,6 +1,144 @@
-.center-container {
+html,
+.container {
+  background-color: #5687e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.display {
   display: flex;
-  flex-direction: column;
+}
+
+.container {
+  background-color: #4369b2;
+}
+
+.country {
   align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  margin: 1rem 8.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+div.countries {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+a.countries {
+  width: 45%;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 3rem 2rem 3rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+a.countries:nth-child(4n+1) {
+  background-color: #5687e4;
+}
+
+a.countries:nth-child(4n+4) {
+  background-color: #5687e4;
+}
+
+h2.ea-country {
+  font-size: 1rem;
+}
+
+.r-country {
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+}
+
+.back-icon {
+  color: white;
+}
+
+.img-world {
+  width: 12rem;
+}
+
+@media screen and (min-width: 768px) {
+  .img-world {
+    justify-content: space-between;
+    width: 30rem;
+  }
+
+  .info {
+    background-color: #5687e4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 14rem;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .info {
+    background-color: #5687e4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  p.info {
+    background-color: #5687e4;
+    margin-right: 4rem;
+  }
+}
+
+.info-covid {
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #5687e4;
+}
+
+p.info {
+  background-color: #5687e4;
+}
+
+.country-info {
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: white;
+}
+
+li:nth-child(odd) {
+  background-color: #5687e4;
+}
+
+.left,
+.right {
+  font-size: 1.2rem;
+  background-color: transparent;
 }
