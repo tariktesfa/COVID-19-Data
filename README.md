@@ -7,9 +7,8 @@ This is a React module capstone project. It is built with react and redux by usi
 
 ## Live Demo
 
-[Live Link]
+[Live Link](https://covid-19-data-app.herokuapp.com/)
 
-[Video Presentation]
 ## Built With
 
 - React
