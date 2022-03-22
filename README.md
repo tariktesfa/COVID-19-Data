@@ -33,10 +33,13 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [Tarikwa Tesfa](https://twitter.com/tarik_tesfa)
 - LinkedIn: [Tarikwa Tesfa](https://www.linkedin.com/in/tarikwa-tesfa-232a64167/)
 
+## Acknowledgments
+
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
 ## Show your support
 
 Give a ⭐ if you like this project!
 
-## Recognition
-
-For all of you who helped me finishing this project.
+## :memo: License
+This project is [MIT](./MIT.md) licensed.
