@@ -1,51 +1,76 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
-import { IoMdArrowRoundBack, IoIosSettings } from 'react-icons/io';
+import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
 import { BsFillMicFill } from 'react-icons/bs';
-import { loadDataCountries } from '../redux/Data/CovidData';
+import { CountriesData } from '../redux/Data/CovidData';
 
 const Details = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const covidData = useSelector((state) => state.dataCovid);
   useEffect(() => {
-    dispatch(loadDataCountries());
+    dispatch(CountriesData());
   }, [dispatch]);
 
   const countryData = covidData.filter((data) => data.id === id);
+  const CurrFlag = `https://countryflagsapi.com/png/${countryData[0].country}`;
+
+  const date = new Date();
+  const today = `${date.getFullYear()}-${
+    date.getMonth() + 1 >= 10 ? date.getMonth() + 1 : `0${date.getMonth() + 1}`
+  }-${date.getDate() >= 10 ? date.getDate() : `0${date.getDate()}`}`;
 
   return (
     <>
       <div className="container">
         {covidData.length === 0 && (
-          <h3 className="wait">Loading Covid Data...</h3>
+          <h3 className="wait">Loading Covid-19 Data...</h3>
         )}
         {covidData.length > 0 && (
           <>
-            <div className="r-country display">
-              <Link to="/" key={id}>
-                <IoMdArrowRoundBack className="back-icon" />
-              </Link>
-              <h2>{countryData[0].country}</h2>
+            <div className="country-name display">
+              <div className="main-content">
+                <Link to="/" key={id}>
+                  <IoIosArrowBack className="back-icon" />
+                </Link>
+                <h3>Back</h3>
+              </div>
+              <div>
+                <h3>
+                  {countryData[0].country}
+                  {' '}
+                  <span>Covid-19 Statistics</span>
+                </h3>
+              </div>
               <div className="header-icons">
-                <BsFillMicFill />
+                <BsFillMicFill className="mic-icon" />
                 <IoIosSettings />
               </div>
             </div>
             <div>
               <section className="info-covid display">
-                <img className="img-world" src="https://i.ibb.co/fkW5pNw/world-covid.jpg" alt="world-covid" />
+                <div className="flag">
+                  <img className="img-world" src={CurrFlag} alt="world-covid" />
+                </div>
                 <div>
                   <p className="info">{countryData[0].country}</p>
-                  <p className="info">{countryData[0].TotalConfirmed}</p>
+                  <p className="info">
+                    Total Covid Case:
+                    {' '}
+                    {countryData[0].TotalConfirmed}
+                  </p>
                 </div>
               </section>
             </div>
-            <div>
-              <p className="country-info">Country information</p>
+            <div className="country-info">
+              <p>STATS BY COUNTRY</p>
             </div>
             <ul>
+              <li>
+                <span className="left">Date:</span>
+                <div className="right">{today}</div>
+              </li>
               <li>
                 <span className="left">Total Confirmed:</span>
                 <div className="right">{countryData[0].TotalConfirmed}</div>
@@ -53,10 +78,6 @@ const Details = () => {
               <li>
                 <span className="left">New Confirmed:</span>
                 <div className="right">{countryData[0].NewConfirmed}</div>
-              </li>
-              <li>
-                <span className="left">Total Recovered:</span>
-                <div className="right">{countryData[0].TotalRecovered}</div>
               </li>
               <li>
                 <span className="left">New Recovered:</span>
@@ -69,10 +90,6 @@ const Details = () => {
               <li>
                 <span className="left">New Deaths:</span>
                 <div className="right">{countryData[0].NewDeaths}</div>
-              </li>
-              <li>
-                <span className="left">Date:</span>
-                <div className="right">{countryData[0].Date}</div>
               </li>
             </ul>
           </>

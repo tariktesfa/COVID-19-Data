@@ -1,10 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import DataReducer from './Data/CovidData';
+import thunk from 'redux-thunk';
+import dataCovid from './Data/CovidData';
 
-const reducer = combineReducers({
-  items: DataReducer,
+const rootReducer = combineReducers({
+  dataCovid,
 });
-const store = createStore(reducer, applyMiddleware(logger, thunk));
+
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+
 export default store;

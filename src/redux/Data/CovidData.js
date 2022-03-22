@@ -1,27 +1,24 @@
-const FETCHDATA = 'FETCHDATA';
-
+const FEATCHDATA = 'FEATCHDATA';
 const initialState = [];
-
-const dataURL = 'https://api.covid19api.com/summary';
-
+const apiURL = 'https://api.covid19api.com/summary';
 export const getData = (payload) => ({
-  type: FETCHDATA,
+  type: FEATCHDATA,
   payload,
 });
 
 const CovidData = (state = initialState, action) => {
   switch (action.type) {
-    case FETCHDATA:
+    case FEATCHDATA:
       return action.payload;
     default:
       return state;
   }
 };
 
-export const loadDataCountries = () => async (dispatch) => {
-  const response = await fetch(dataURL);
+export const CountriesData = () => async (dispatch) => {
+  const response = await fetch(apiURL);
   const data = await response.json();
-  const allData = data.Countries.map((e) => {
+  const allCountryData = data.Countries.map((e) => {
     const currentData = {
       id: e.ID,
       country: e.Country,
@@ -35,7 +32,7 @@ export const loadDataCountries = () => async (dispatch) => {
     };
     return currentData;
   });
-  dispatch(getData(allData));
+  dispatch(getData(allCountryData));
 };
 
 export default CovidData;

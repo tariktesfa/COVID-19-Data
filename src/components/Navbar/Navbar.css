@@ -3,8 +3,8 @@
   background-color: #f85f8d;
   border: 1px solid rgb(214, 2, 90);
   justify-content: space-between;
-  padding-top: 20px;
-  height: 40px;
+  padding: 10px 20px;
+  height: 50px;
 }
 
 .nav-items {
@@ -17,22 +17,19 @@
   justify-content: space-evenly;
   margin-right: 20px;
   color: #fff;
-}
-
-.date {
-  margin: 0 40px 0 0;
-  color: #fff;
-  font-weight: bold;
+  margin-top: 5px;
 }
 
 .header-text {
-  margin: 3px 0 0 100px;
+  text-align: center;
   color: #fff;
+  margin-top: 5px;
 }
 
 .arrow {
   margin-top: 3px;
   color: #fff;
+  font-size: 20px;
 }
 
 .icons-mic {
