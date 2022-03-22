@@ -6,8 +6,8 @@ const Navbar = () => (
   <div className="navbar">
     <div className="nav-items">
       <IoIosArrowBack className="arrow" />
-      <h3 className="date">2022</h3>
-      <p className="header-text">Countries&apos;s COVID-19 Data</p>
+      <h2 className="date">2022</h2>
+      <h4 className="header-text">Countries&apos;s COVID-19 Data</h4>
     </div>
     <div className="icons">
       <span className="icons-mic">
