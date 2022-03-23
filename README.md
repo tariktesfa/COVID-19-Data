@@ -1,17 +1,21 @@
 # COVID-19 Data
 
-This is a React module capstone project.
+This is a React module capstone project. It is built with react and redux by using a public covid api.
 ## Screenshot
 
-[screenshot]
+![screenshot](https://user-images.githubusercontent.com/38283436/159509800-f54c6d0c-5a1a-4126-8148-c0420d317c64.png)
 
 ## Live Demo
 
-[Live Link]
+[Live Link](https://covid-19-data-app.herokuapp.com/)
+
+[Video Presentation Link](https://www.loom.com/share/b1ba7ba6410a4b48aeda641dbed63337)
+
 ## Built With
 
 - React
 - Redux
+- Jest
 
 ## Getting Started
 
@@ -30,10 +34,10 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [Tarikwa Tesfa](https://twitter.com/tarik_tesfa)
 - LinkedIn: [Tarikwa Tesfa](https://www.linkedin.com/in/tarikwa-tesfa-232a64167/)
 
+## Acknowledgments
+
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
 ## Show your support
 
 Give a ⭐ if you like this project!
-
-## Recognition
-
-For all of you who helped me finishing this project.

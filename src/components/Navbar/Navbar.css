@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  background-color: #f85f8d;
+  border: 1px solid rgb(214, 2, 90);
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.date {
+  margin: 0 40px 0 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-text {
+  text-align: center;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.arrow {
+  margin-top: 3px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.icons-mic {
+  margin: 0 20px;
+}
