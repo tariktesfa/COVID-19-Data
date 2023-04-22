@@ -9,8 +9,6 @@ This is a React module capstone project. It is built with react and redux by usi
 
 [Live Link](https://covid-19-data-app.herokuapp.com/)
 
-[Video Presentation Link](https://www.loom.com/share/b1ba7ba6410a4b48aeda641dbed63337)
-
 ## Built With
 
 - React
